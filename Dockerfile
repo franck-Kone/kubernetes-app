@@ -4,7 +4,7 @@ FROM httpd:latest
 # Update the package list and install unzip
 RUN apt-get update && apt-get install -y unzip wget
 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip /home/ubuntu
+wget https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip >> /home/ubuntu
 
 WORKDIR /home/ubuntu
 RUN unzip little-fashion.zip 
