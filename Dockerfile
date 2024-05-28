@@ -8,5 +8,5 @@ RUN unzip estateagency.zip
 RUN cp -rvf estateagency/* .
 RUN rm -rf estateagency.zip estateagency
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
-EXPOSE 80
+EXPOSE 80 22
 
