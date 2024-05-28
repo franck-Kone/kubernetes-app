@@ -1,7 +1,7 @@
 FROM httpd:latest
 
 # Install httpd, zip, and unzip
-RUN yum install unzip -y 
+RUN apt install unzip -y 
 
 # Download the zip file to /tmp and move it to the desired location
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip >> /tmp/little-fashion.zip
