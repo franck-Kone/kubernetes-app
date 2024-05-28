@@ -10,8 +10,8 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/li
 WORKDIR /var/www/html
 
 # Unzip the file and clean up in one layer to reduce image size
-RUN unzip /temp/little-fashion.zip -d /var/www/html \
-    && cp -rvf /var/www/html/little-fashion/* /var/www/html/ \
+RUN unzip /tmp/little-fashion.zip -d /var/www/html \
+    && cp -rvf /var/www/html/little-fashion/2127_little_fashion/* /var/www/html/ \
     && rm -rf /tmp/little-fashion.zip /var/www/html/little-fashion
 
 # Expose ports
