@@ -1,12 +1,12 @@
-FROM httpd:latest
+FROM centos:latest
 
 
 # Update the package list and install unzip
-RUN apt-get update && apt-get install -y unzip wget
+RUN yum update && yum install -y unzip wget
 
 #RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip -O /home/ubuntu/little-fashion.zip
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip -O /tmp/little-fashion.zip && \
-    unzip /tmp/little-fashion.zip -d /usr/local/apache2/htdocs/
+    unzip /tmp/little-fashion.zip -d /var/www/html
 
 # Clean up
 RUN rm /tmp/little-fashion.zip
