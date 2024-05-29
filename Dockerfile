@@ -5,6 +5,7 @@ FROM centos:7
 RUN yum update -y
 RUN yum install unzip -y
 RUN yum install wget -y
+RUN mkdir /var/www /var/www/html
 
 #RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip -O /home/ubuntu/little-fashion.zip
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip -O /tmp/little-fashion.zip && \
