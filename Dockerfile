@@ -1,4 +1,4 @@
-FROM centos:7_2009_1
+FROM centos:7
 
 
 # Update the package list and install unzip
