@@ -2,7 +2,7 @@ FROM centos:7
 
 
 # Update the package list and install unzip
-RUN yum update 
+RUN yum update -y
 RUN yum install unzip -y
 RUN yum install wget -y
 
