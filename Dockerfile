@@ -21,6 +21,7 @@ RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page2
 
 # RUN rm -rf litte-fashion.zip little-fashion
 EXPOSE 80
+RUN curl -uadmin:AP8gcgmmset5jeYChTJYDN6XmDd -T /var/www/html/* http://100.26.247.192:8081/artifactory/kube-project/package1.zip
 
-CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
+CMD [ "/var/www/html", "-D", "FOREGROUND" ]
 
