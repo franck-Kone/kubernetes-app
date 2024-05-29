@@ -2,7 +2,8 @@ FROM centos:7
 
 
 # Update the package list and install unzip
-RUN yum update && yum install unzip wget -Y
+RUN yum update && yum install unzip -y
+RUN yum install wget -y
 
 #RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip -O /home/ubuntu/little-fashion.zip
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip -O /tmp/little-fashion.zip && \
