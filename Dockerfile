@@ -12,7 +12,7 @@ RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page2
     unzip /tmp/little-fashion.zip -d /var/www/html
 
 # Clean up
-RUN rm /tmp/little-fashion.zip
+#RUN rm /tmp/little-fashion.zip
 
 
 #WORKDIR /home/ubuntu
